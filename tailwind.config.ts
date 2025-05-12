@@ -5,11 +5,10 @@ import { fontFamily } from "tailwindcss/defaultTheme";
 const config = {
   darkMode: ["class"],
   content: [
-    "./index.html",
-    "./pages/**/*.{ts,tsx}",
-    "./components/**/*.{ts,tsx}",
-    "./app/**/*.{ts,tsx}",
-    "./src/**/*.{ts,tsx}",
+    './pages/**/*.{ts,tsx}',
+    './components/**/*.{ts,tsx}',
+    './app/**/*.{ts,tsx}',
+    './src/**/*.{ts,tsx}',
   ],
   prefix: "",
   theme: {
@@ -58,9 +57,11 @@ const config = {
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
+          border: "hsl(var(--sidebar-border))",
+          primary: "hsl(var(--sidebar-primary))",
+          "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
           accent: "hsl(var(--sidebar-accent))",
           "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
-          border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
       },
@@ -85,6 +86,15 @@ const config = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+      },
+      height: {
+        svh: "100svh",
+      },
+      minHeight: {
+        svh: "100svh",
+      },
+      maxHeight: {
+        svh: "100svh",
       },
     },
   },
